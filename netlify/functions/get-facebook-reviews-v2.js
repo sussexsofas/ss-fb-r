@@ -11,8 +11,8 @@ exports.handler = async function (event, context) {
     };
   }
 
-  const PAGE_ID = 'YOUR_PAGE_ID';
-  const ACCESS_TOKEN = 'YOUR_ACCESS_TOKEN';
+  const PAGE_ID = '470026866204994';
+  const ACCESS_TOKEN = 'EAARvxYSNLa8BO99BaMrWQDo8A6tC0xgBLjsyzALjGyw8ZAiuy1wj7A8SzUDZCIaXN5cN2jPBnbxQhU9GwXjUZAtYwHlnN0ocaWOjNWvZC915MRVxgb3owvqsrXZASkpDMVi1Gls5iCzuaEABDaECoh2btM0xDeCRhtnxFAj15nZCgyiPY0CxiVJZCc09lxLTUoVZClEY4rGe8fIDZA55caZC2WARoMWdTX';
   const url = `https://graph.facebook.com/v19.0/${PAGE_ID}/ratings?access_token=${ACCESS_TOKEN}`;
 
   try {
