@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Reviews Test</title>
+</head>
+<body>
+  <h1>Facebook Reviews</h1>
+  <div id="reviews">Loading...</div>
+  <script>
+    async function fetchReviews() {
+      const res = await fetch("/.netlify/functions/get-facebook-reviews");
+      const data = await res.json();
+      document.getElementById("reviews").innerHTML = data.map(r =>
+        `<div><strong>${r.reviewer.name}</strong>: ${r.review_text || ''}</div>`
+      ).join("");
+    }
+    fetchReviews();
+  </script>
+</body>
+</html>
