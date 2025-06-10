@@ -12,7 +12,7 @@ exports.handler = async function (event, context) {
   }
 
   const PAGE_ID = '61552186662245';
-  const ACCESS_TOKEN = 'EAAKfNyEtz7cBO2yplFZCou8JxHI3Pn6DCtcU0JEKEfuG1QcOOHveE1LIXav8aavr7yghaUdmbyZAuaTym8Yt38LSgGyFbX7PvQo3T32lN6pSMZAIaPs2DPdMA2FBErj08eGYj1zMeWzItPlZAtnZBFpZAJ2MOk51QLz7JRySN4VLUGZAz1dWY5KdoXBXtFYise4i66EgY3ow1Tjyio7H3Az009iX91T';
+  const ACCESS_TOKEN = 'EAAKfNyEtz7cBOZBQqgcHnRFQVfrzmJf1PtEIP49JRXjhwpOjJqwKJ2Pb1cPIYE4GfMBiZAZCGCZCOqLkvN6lOEOJAfhYcfJGBv7QN1AJBTrZALXt1WsNKjgCD2p2yCsTKknmdtZBOxlyGS00HUewCtFpfzBQKaCXTkV4arEBeNaHIoKZAhnU6HDrzhOZBt8C8yZAHG8kjrCW2WcbonFMgvaZBy6EPSigsrDOMZD';
   const url = `https://graph.facebook.com/v19.0/${PAGE_ID}/ratings?access_token=${ACCESS_TOKEN}`;
 
   try {
